@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/App.css';
+import './css/Main.css';
 import { Switch, Route, NavLink } from 'react-router-dom'
 
 import Main from './pages/index'
