@@ -18,12 +18,9 @@ class TabComponent extends Component {
                     onSelect={tabIndex => this.setState({ tabIndex })}
                 >
                     <TabList className="tab-nav-container">
-                        <Tab
-                            className={`${this.state.tabIndex === 0 ? 'tab-selected active' : null
-                                }`}
-                        >
+                        <Tab className={`${this.state.tabIndex === 0 ? 'tab-selected active' : null}`}>
                             <TabDoor />
-                            <p style={{marginBottom: '1.875rem'}}>
+                            <p style={{ marginBottom: '1.875rem' }}>
                                 <strong>No commitments<br />Cancel online at anytime</strong>
                             </p>
                         </Tab>
