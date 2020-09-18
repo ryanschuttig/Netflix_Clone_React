@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from '../images/tab-1-pic.png';
+import styled from 'styled-components';
 
 function TabContentOne() {
     return (
@@ -17,3 +18,8 @@ function TabContentOne() {
 }
 
 export default TabContentOne;
+
+// Main Content Container
+const TabContentContainer = styled.div`
+    background: var(--main-deep-dark);
+`;
