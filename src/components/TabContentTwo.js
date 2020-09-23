@@ -16,3 +16,8 @@ function TabContentTwo() {
 }
 
 export default TabContentTwo;
+
+// Main Tab Content Container
+const TabContainer = styled.div`
+    background: var(--main-deep-dark);
+`;
