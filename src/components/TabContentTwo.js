@@ -20,4 +20,9 @@ export default TabContentTwo;
 // Main Tab Content Container
 const TabContainer = styled.div`
     background: var(--main-deep-dark);
+
+    .tab-content {
+        margin: 0 15%;
+        
+    }
 `;
