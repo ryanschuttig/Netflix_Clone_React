@@ -23,6 +23,10 @@ const TabContainer = styled.div`
 
     .tab-content {
         margin: 0 15%;
+    }
+
+    // Tab Top Content
+    .tab-top-content {
         
     }
 `;
