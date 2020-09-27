@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 function TabContentTwo() {
     return (
-        <div>
+        <TabContainer>
             <div className="tab-content">
                 <div className="tab-top-content">
                     <span>Watch TV shows and movies anytime, anywhere - personalized for you.</span>
                     <Button>try it now</Button>
                 </div>
             </div>
-        </div>
+        </TabContainer>
     )
 }
 
@@ -27,6 +27,10 @@ const TabContainer = styled.div`
 
     // Tab Top Content
     .tab-top-content {
-        
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-content: center;
+        align-item: center;
+        padding: 2.5rem 0;
     }
 `;
