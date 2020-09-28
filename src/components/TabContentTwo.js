@@ -33,4 +33,8 @@ const TabContainer = styled.div`
         align-item: center;
         padding: 2.5rem 0;
     }
+
+    span {
+        
+    }
 `;
