@@ -9,7 +9,7 @@
   ## Title
   Netflix_Clone_React
   ## Description
-  This is a clone of Netflix built with React.
+  I am currently working daily on this project. It is a clone of Netflix built with React.
   ## Installation
   npm i
   ## Questions
