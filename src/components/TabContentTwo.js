@@ -36,5 +36,6 @@ const TabContainer = styled.div`
 
     span {
         grid-columns: 1 / 8;
+        
     }
 `;
