@@ -35,7 +35,7 @@ const TabContainer = styled.div`
     }
 
     span {
-        grid-columns: 1 / 8;
+        grid-column: 1 / 8;
         
     }
 `;
