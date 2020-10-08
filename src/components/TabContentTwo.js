@@ -7,8 +7,8 @@ function TabContentTwo() {
         <TabContainer>
             <div className="tab-content">
                 <div className="tab-top-content">
-                    <span>Watch TV shows and movies anytime, anywhere - personalized for you.</span>
-                    <Button>try it now</Button>
+                    <span style={{ fontSize: '1.5rem' }}>Watch TV shows and movies anytime, anywhere - personalized for you.</span>
+                    <Button className="btn">try it now</Button>
                 </div>
             </div>
         </TabContainer>
@@ -36,6 +36,10 @@ const TabContainer = styled.div`
 
     span {
         grid-column: 1 / 8;
-        
+    }
+
+    .btn {
+        margin: 0 1.25rem 1.25rem;
+        grid-column: 10 / 12;
     }
 `;
