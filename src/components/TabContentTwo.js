@@ -10,6 +10,12 @@ function TabContentTwo() {
                     <span style={{ fontSize: '1.5rem' }}>Watch TV shows and movies anytime, anywhere - personalized for you.</span>
                     <Button className="btn">try it now</Button>
                 </div>
+                {/* Tab Bottom Content */}
+                <div className="tab-bottom-content">
+                    <div>
+                        
+                    </div>
+                </div>
             </div>
         </TabContainer>
     )
