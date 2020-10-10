@@ -3,8 +3,8 @@ import logo from '../svg/logo.svg';
 import { NavLink, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Button } from './Button';
-import {Icon} from 'react-icons-kit';
-import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right';
+import { Icon } from 'react-icons-kit';
+import { ic_keyboard_arrow_right } from 'react-icons-kit/md/ic_keyboard_arrow_right';
 
 class Header extends Component {
     render() {
@@ -21,7 +21,7 @@ class Header extends Component {
                     <Button className="main-offer-btn" primary>
                         try it now
                         <Icon className="Icon" icon={ic_keyboard_arrow_right} size={37}></Icon>
-                        </Button>
+                    </Button>
                 </div>
             </HeaderComponent>
         );
