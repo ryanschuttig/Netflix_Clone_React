@@ -13,7 +13,7 @@ function TabContentTwo() {
                 {/* Tab Bottom Content */}
                 <div className="tab-bottom-content">
                     <div>
-                        
+
                     </div>
                 </div>
             </div>
