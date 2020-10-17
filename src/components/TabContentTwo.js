@@ -27,7 +27,10 @@ function TabContentTwo() {
                     <div>
                         <img
                             src={ImgTablet}
-                            style={{ width: '18.75rem', paddingTop: '0.625rem' }} />
+                            style={{
+                                width: '18.75rem',
+                                paddingTop: '0.625rem'
+                            }} />
                         <h3>Watch on your TV</h3>
                         <p>Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
                     </div>
@@ -75,5 +78,14 @@ const TabContainer = styled.div`
     .btn {
         margin: 0 1.25rem 1.25rem;
         grid-column: 10 / 12;
+    }
+
+    // Tab Bottom Content
+    .tab-bottom-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        text-align: center;
+        margin-top: 2rem;
     }
 `;
