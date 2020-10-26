@@ -6,6 +6,17 @@ import { iosWorld } from 'react-icons-kit/ionicons/iosWorld/';
 import { arrowSortedDown } from 'react-icons-kit/typicons/arrowSortedDown/';
 
 class Footer extends Component {
+    state = {
+        langContent: false
+    }
+
+    handleToggle = e => {
+        e.preventDefault();
+        this.setState({
+            langContent: !this.state.langContent
+        })
+    }
+
     render() {
         return (
             <FooterContainer>
@@ -71,21 +82,23 @@ class Footer extends Component {
                         </li>
                     </ul>
                     {/* Language Button */}
-                    <div className="lang-btn">
+                    <div className="lang-btn" onClick={this.handleToggle}>
                         <Icon icon={iosWorld} size={20} />
                     &nbsp;&nbsp;English&nbsp;&nbsp;
                     <Icon icon={arrowSortedDown} />
                     </div>
                 </div>
                 {/* Toggle Language Content */}
-                <div className="lang-toggle">
-                    <ul>
-                        <li>English</li>
-                    </ul>
-                    <ul>
-                        <li>French</li>
-                    </ul>
-                </div>
+                {this.state.langContent && (
+                    <div className="lang-toggle">
+                        <ul>
+                            <li>English</li>
+                        </ul>
+                        <ul>
+                            <li>French</li>
+                        </ul>
+                    </div>
+                )}
                 <span style={{ marginLeft: '15%', fontSize: '0.9rem' }}>Definitely Not Netflix</span>
             </FooterContainer>
         )
@@ -132,12 +145,14 @@ const FooterContainer = styled.footer`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: 2rem 0 2rem;
+        cursor: pointer;
     }
 
     // Toggle Language Content
     .lang-toggle {
         margin-left: 15%;
         position: absolute;
+        margin-top: -2rem;
     }
 
     .lang-toggle ul {
@@ -145,5 +160,9 @@ const FooterContainer = styled.footer`
         width: 8.125rem;
         border: 1px solid #333;
         text-align: center;
+        &:hover {
+            background: #0085ff;
+            color: #fff;
+        }
     }
 `;
