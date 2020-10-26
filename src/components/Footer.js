@@ -77,6 +77,15 @@ class Footer extends Component {
                     <Icon icon={arrowSortedDown} />
                     </div>
                 </div>
+                {/* Toggle Language Content */}
+                <div className="lang-toggle">
+                    <ul>
+                        <li>English</li>
+                    </ul>
+                    <ul>
+                        <li>French</li>
+                    </ul>
+                </div>
                 <span style={{ marginLeft: '15%', fontSize: '0.9rem' }}>Definitely Not Netflix</span>
             </FooterContainer>
         )
@@ -123,5 +132,18 @@ const FooterContainer = styled.footer`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: 2rem 0 2rem;
+    }
+
+    // Toggle Language Content
+    .lang-toggle {
+        margin-left: 15%;
+        position: absolute;
+    }
+
+    .lang-toggle ul {
+        background: var(--main-deep-dark);
+        width: 8.125rem;
+        border: 1px solid #333;
+        text-align: center;
     }
 `;
