@@ -8,14 +8,14 @@ import { arrowSortedDown } from 'react-icons-kit/typicons/arrowSortedDown/';
 class Footer extends Component {
     state = {
         langContent: false
-    }
+    };
 
     handleToggle = e => {
         e.preventDefault();
         this.setState({
             langContent: !this.state.langContent
-        })
-    }
+        });
+    };
 
     render() {
         return (
@@ -101,7 +101,7 @@ class Footer extends Component {
                 )}
                 <span style={{ marginLeft: '15%', fontSize: '0.9rem' }}>Definitely Not Netflix</span>
             </FooterContainer>
-        )
+        );
     }
 }
 
@@ -141,7 +141,7 @@ const FooterContainer = styled.footer`
         background: transparent;
         border: 0.9px solid #333;
         padding: 1rem;
-        width: 8rem;
+        width: 8.125rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: 2rem 0 2rem;
@@ -150,9 +150,9 @@ const FooterContainer = styled.footer`
 
     // Toggle Language Content
     .lang-toggle {
-        margin-left: 15%;
+        margin-left: 14.9%;
         position: absolute;
-        margin-top: -2rem;
+        margin-top: -1rem;
     }
 
     .lang-toggle ul {
@@ -160,6 +160,7 @@ const FooterContainer = styled.footer`
         width: 8.125rem;
         border: 1px solid #333;
         text-align: center;
+        margin-top: -1rem;
         &:hover {
             background: #0085ff;
             color: #fff;
