@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import { Button } from './Button';
 import { Icon } from 'react-icons-kit';
 import { ic_keyboard_arrow_right } from 'react-icons-kit/md/ic_keyboard_arrow_right';
+// Media Query
+import { generateMedia } from "styled-media-query";
 
 class Header extends Component {
     render() {
@@ -30,6 +32,13 @@ class Header extends Component {
 
 export default Header;
 
+const customMedia = generateMedia({
+    lgDesktop: '1350px',
+    mdDesktop: '1150px',
+    tablet: '960px',
+    smTablet: '740px',
+})
+
 // Logo
 const Logo = styled.img`
     width: 10rem;
@@ -38,6 +47,10 @@ const Logo = styled.img`
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-left: 0;
+    ${customMedia.lessThan('tablet')`
+        left: 20%;
+    `}
 `;
 
 // Header Container
